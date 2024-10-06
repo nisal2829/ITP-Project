@@ -1,0 +1,66 @@
+/* Main container styles */
+.nav {
+  background-color: #414040; 
+  height: 14rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Flex container styles */
+.nav-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 72rem; 
+  width: 100%;
+  padding: 0.75rem; 
+}
+
+/* Title styles */
+.page-title {
+  font-weight: 700; 
+  padding-top: 2.5rem; 
+  font-size: 2rem; 
+  color: #fff; 
+  text-decoration: none;
+  padding-left: 2.5rem;
+  position: absolute;
+  top: 8%;
+  left: 2%;
+}
+
+/* Navigation list styles */
+.nav-menu {
+  position: absolute;
+  list-style: none;
+  top: 10%;
+  right: 5%; /* Adjusted for better alignment */
+  margin: 0;
+  display: flex;
+  gap: 2rem; 
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-menu li {
+  cursor: pointer;
+  font-size: 1rem;
+  color: #c1b9b9; 
+  transition: color 0.3s;
+}
+
+.nav-menu li:hover {
+  color: #2563eb; 
+}
+
+/* Profile picture styles */
+.profile-image {
+  height: 1.75rem; 
+  width: 1.75rem; 
+  border-radius: 50%; /* Full border radius for circular image */
+  object-fit: cover; 
+}

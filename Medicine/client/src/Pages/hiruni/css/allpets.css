@@ -1,0 +1,86 @@
+/* Container styles */
+.all-details-container {
+  padding: 20px;
+}
+
+/* Search container styles */
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Search input styles */
+.search-input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  flex: 1;
+  margin-right: 10px;
+}
+
+/* Search button styles */
+.search-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #45a049;
+}
+
+/* Order list styles */
+.order-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Order item styles */
+.order-item {
+  text-decoration: none;
+  color: inherit;
+  width: 200px; /* Adjust width as needed */
+}
+
+/* Order details styles */
+.order-details {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Image container styles */
+.image-container {
+  text-align: center;
+}
+
+/* Image styles */
+.order-image {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px;
+}
+
+/* Pet name styles */
+.pet-name {
+  font-weight: bold;
+}
+
+/* Pet type and status styles */
+.pet-type,
+.pet-status {
+  margin: 5px 0;
+}
+
+/* No orders message styles */
+.no-orders-message {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}

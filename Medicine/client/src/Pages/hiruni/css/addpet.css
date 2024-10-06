@@ -1,0 +1,87 @@
+/* Form Container */
+.add-item-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 4%;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Styling for the upload progress or errors */
+.upload-progress-errors {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Upload button styling */
+.upload-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-btn:hover {
+  background-color: #45a049;
+}
+
+/* Submit button styling */
+.submit-btn {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.submit-btn:hover {
+  background-color: #007bb5;
+}
+
+/* Form Inputs */
+.add-item-container input[type="text"],
+.add-item-container input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* File Input Styling */
+.add-item-container input[type="file"] {
+  display: none;
+}
+
+/* Image styling */
+.add-item-container img {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  margin: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Adjust upload progress styles */
+.upload-progress {
+  margin-top: 8px;
+}
+
+/* Specific upload progress error styling */
+.upload-progress-errors {
+  color: rgb(19, 5, 150);
+}

@@ -1,0 +1,214 @@
+/* Apply background image to the whole page */
+body {
+  background-image: url('background.jpeg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the whole page */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Ensures font consistency */
+}
+
+/* Container for all ads */
+.all-ads {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 5%;
+}
+
+/* Search bar container */
+.search {
+  display: flex;
+  justify-content: flex-end; /* Aligns the search bar to the right */
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative; /* If you want absolute positioning, remove this */
+  top: 17%; /* Adjust based on your layout */
+  right: 0; /* Aligns the search area to the right */
+  padding-right: 10px; /* Optional: adds space between the search and the right edge */
+}
+
+/* Search input and button styling */
+.search input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Filter details styling */
+.filter-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+
+.filter-details input[type='number'],
+.filter-details input[type='text'],
+.filter-details button {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.filter-details input[type='number'],
+.filter-details input[type='text'] {
+  flex: 1;
+  max-width: calc(50% - 1rem); /* Adjust width for responsive design */
+}
+
+.filter-details button {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.filter-details button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Adjust margins and padding for better spacing */
+.filter-details input,
+.filter-details button {
+  margin-bottom: 1rem;
+}
+
+
+.post-ad-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.post-ad-button {
+  background-color: #ac9b08; /* Primary color */
+  color: #ffffff; /* White text */
+  padding: 10px 14px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  top: 17%;
+  left: 20%;
+}
+
+.post-ad-button:hover {
+  background-color: #050c29; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.post-ad-button:active {
+  background-color: #e9ec0a; /* Even darker shade on click */
+  transform: translateY(0); /* Reset lift on click */
+}
+
+
+/* Ads container (grid format) */
+.a-ad {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+/* Individual ad container */
+.ad-with-photo-name-price {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex; /* Flexbox layout for image and content */
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Added for absolute positioning */
+}
+
+.ad-with-photo-name-price:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image container within an ad */
+.image-container {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Details container within an ad */
+.details-container {
+  padding: 15px;
+  flex-grow: 1; /* Allows details container to grow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between name and price */
+}
+
+.details-container .pet-name {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.details-container #pet-price {
+  font-size: 18px;
+  color: #007bff;
+  font-weight: 500;
+  text-align: center; /* Centered pet price */
+}
+
+/* No matching orders message */
+.text-center {
+  text-align: center;
+}
+
+.text-xl {
+  font-size: 24px;
+  font-weight: 600;
+  color: #777;
+}

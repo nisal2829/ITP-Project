@@ -1,0 +1,53 @@
+.container {
+  max-width: 600px;
+  margin: 4% auto; /* Center container horizontally */
+}
+
+.bg-white {
+  background-color: #ffffff;
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically if height allows */
+  padding: 2rem; /* Add padding for spacing */
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.rounded-lg {
+  border-radius: 0.75rem;
+}
+
+.text-center {
+  text-align: center; /* Center text */
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.flex {
+  display: flex; /* Use flexbox for layout */
+}
+
+.justify-center {
+  justify-content: center; /* Center items horizontally */
+}
+
+.items-center {
+  align-items: center; /* Center items vertically */
+}
+
+.h-40 {
+  height: 10rem; /* Example height for image */
+}
+
+.w-40 {
+  width: 10rem; /* Example width for image */
+}
+
+.cursor-pointer {
+  cursor: pointer; /* Pointer on hover */
+}

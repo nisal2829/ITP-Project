@@ -1,0 +1,77 @@
+/* Main container styles */
+.header-nav {
+  background: linear-gradient(to right, #99e5f0, #ffffff); /* Gradient from blue to white */
+  height: 12rem; /* Equivalent to h-40 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Flex container styles */
+.header-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 72rem; /* Equivalent to max-w-6xl */
+  width: 100%;
+  padding: 0.75rem; /* Equivalent to p-3 */
+  position: relative; /* Added for positioning child elements */
+}
+
+/* Logo styles */
+.header-page-name {
+  font-weight: 700; /* Equivalent to font-bold */
+  font-size: 2rem; /* Customize as needed */
+  color: #0b0b0b; /* Dark text for better contrast */
+  text-decoration: none;
+  padding-left: 2.5rem; /* Add padding for spacing */
+}
+
+/* Navigation list styles */
+.header-menu {
+  list-style: none; /* Remove bullet points */
+  display: flex;
+  gap: 2rem; /* Space between links */
+  margin: 0; /* Remove default margin */
+}
+
+.header-menu li {
+  cursor: pointer;
+  font-size: 1rem;
+  color: #131212; /* Dark text for better contrast */
+  transition: color 0.3s;
+}
+
+.header-menu li:hover {
+  color: #2563eb; /* Hover color (blue-600) */
+}
+
+.header-menu a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use inherited color from li */
+}
+
+/* Profile picture styles */
+.header-profile-pic {
+  height: 1.75rem; /* Equivalent to h-7 */
+  width: 1.75rem; /* Equivalent to w-7 */
+  border-radius: 9999px; /* Full border radius for circular image */
+  object-fit: cover; /* Cover the entire element */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header-details {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .header-page-name {
+    font-size: 1.5rem; /* Adjust logo size for mobile */
+  }
+
+  .header-menu {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    gap: 1rem; /* Reduce gap */
+  }
+}

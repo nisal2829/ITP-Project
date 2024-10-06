@@ -1,0 +1,213 @@
+/* General Styles */
+.container {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+/* Scrollbar Styling */
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #f9f9f9;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 6px;
+  border: 3px solid #f9f9f9;
+}
+
+.dark .scrollbar::-webkit-scrollbar-track {
+  background: #2d3748;
+}
+
+.dark .scrollbar::-webkit-scrollbar-thumb {
+  background-color: #4a5568;
+  border: 3px solid #2d3748;
+}
+
+/* Title */
+h2 {
+  margin: 20px 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #d3e2f1;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.table td {
+  background-color: #f1f5f9;
+  font-size: 1rem;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #e2e8f0;
+}
+
+.table .dark th,
+.table .dark td {
+  background-color: #2d3748;
+  color: #e2e8f0;
+}
+
+/* Button Base Styles */
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn--success {
+  background-color: #38a169;
+  color: #ffffff;
+}
+
+.btn--danger {
+  background-color: #e53e3e;
+  color: #ffffff;
+}
+
+.btn--disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* Button Focus Styles */
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(66, 153, 225, 0.4);
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.modal__body {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.modal__footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Dark Mode Modal */
+.dark .modal__content {
+  background-color: #2d3748;
+  color: #e2e8f0;
+}
+
+.dark .modal__header {
+  border-color: #4a5568;
+}
+
+.modal__footer .btn--danger {
+  background-color: #f44336;
+}
+
+.modal__footer .btn--cancel {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* Table Action Buttons */
+.table .action-btn {
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.table .action-btn--edit {
+  background-color: #38a169;
+  color: #fff;
+}
+
+.table .action-btn--delete {
+  background-color: #e53e3e;
+  color: #fff;
+}
+
+.table .action-btn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+
+  .modal__content {
+      max-width: 90%;
+  }
+}
